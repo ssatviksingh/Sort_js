@@ -27,11 +27,10 @@
                 <label>Algorithm</label>
                 <select id="algorithms">
                     <option value="bubble">Bubble Sort</option>
-                    <option value="comb">Comb Sort</option>
-                    <option value="heap">Heap Sort</option>
+                    <option value="comb">Merge Sort</option>
+                    <option value="heap">Quick Sort</option>
                     <option value="insertion">Insertion Sort</option>
                     <option value="selection">Selection Sort</option>
-                    <option value="shell">Shell Sort</option>
                 </select>
             </div>
             <div id="sort-order">
@@ -68,19 +67,18 @@
             </div>
 
             <div id="comb-info" class="algo-container hidden">
-                <h2 class="algo-header">Comb Sort</h2>
+                <h2 class="algo-header">Merge Sort</h2>
                 <span class="algo-details">
-                    Comb Sort is mainly an improvement over Bubble Sort. Bubble sort always compares adjacent values. So all inversions are removed
-                    one by one. Comb Sort improves on Bubble Sort by using gap of size more than 1.
+                    Merge sort is a recursive sorting algorithm that divides an array into smaller sub-arrays, sorts those sub-arrays, and then merges them back together in sorted order.
                 </span>
                 <span class="algo-complexity">
                     <ul>
-                        <li class="algo-info"><span class="complexity-item">Worst Complexity : </span><span class="complexity-value">N^2</span></li>
+                        <li class="algo-info"><span class="complexity-item">Worst Complexity : </span><span class="complexity-value">N * log(N)</span></li>
                         <li class="algo-info">
                             <span class="complexity-item">Average Complexity : </span><span class="complexity-value">N * log(N)</span>
                         </li>
-                        <li class="algo-info"><span class="complexity-item">Best Complexity : </span><span class="complexity-value">N</span></li>
-                        <li class="algo-info"><span class="complexity-item">Space Complexity : </span><span class="complexity-value">1</span></li>
+                        <li class="algo-info"><span class="complexity-item">Best Complexity : </span><span class="complexity-value">N * log(N)</span></li>
+                        <li class="algo-info"><span class="complexity-item">Space Complexity : </span><span class="complexity-value">N</span></li>
                         <li class="algo-info"><span class="complexity-item">Method : </span><span class="complexity-value">Exchanging</span></li>
                         <li class="algo-info"><span class="complexity-item">Stable : </span><span class="complexity-value">No</span></li>
                     </ul>
@@ -88,15 +86,13 @@
             </div>
 
             <div id="heap-info" class="algo-container hidden">
-                <h2 class="algo-header">Heap Sort</h2>
-                <span class="algo-details">
-                    Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we
-                    first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.
+                <h2 class="algo-header">Quick Sort</h2>
+                <span class="algo-details">Quick sort is a recursive sorting algorithm that divides an array into smaller sub-arrays based on a chosen pivot element.
                 </span>
                 <span class="algo-complexity">
                     <ul>
                         <li class="algo-info">
-                            <span class="complexity-item">Worst Complexity : </span><span class="complexity-value">N * log(N)</span>
+                            <span class="complexity-item">Worst Complexity : </span><span class="complexity-value">N ^ 2 </span>
                         </li>
                         <li class="algo-info">
                             <span class="complexity-item">Average Complexity : </span><span class="complexity-value">N * log(N)</span>
@@ -104,7 +100,7 @@
                         <li class="algo-info">
                             <span class="complexity-item">Best Complexity : </span><span class="complexity-value">N * log(N)</span>
                         </li>
-                        <li class="algo-info"><span class="complexity-item">Space Complexity : </span><span class="complexity-value">1</span></li>
+                        <li class="algo-info"><span class="complexity-item">Space Complexity : </span><span class="complexity-value">log(N)</span></li>
                         <li class="algo-info"><span class="complexity-item">Method : </span><span class="complexity-value">Selection</span></li>
                         <li class="algo-info"><span class="complexity-item">Stable : </span><span class="complexity-value">No</span></li>
                     </ul>
